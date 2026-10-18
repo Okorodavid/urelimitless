@@ -1,0 +1,637 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T23:33:57+00:00",
+  "title": "Design System: urelimitless",
+  "extensions": {
+    "colorMeta": {
+      "bakelite": {
+        "role": "neutral",
+        "displayName": "Bakelite",
+        "canonical": "oklch(22.4% 0.005 67.6)",
+        "hex": "#1d1b19",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#262524",
+          "#434240",
+          "#63615e",
+          "#84827f",
+          "#a7a4a2",
+          "#cac9c7",
+          "#efeeee"
+        ]
+      },
+      "bakelite-deep": {
+        "role": "neutral",
+        "displayName": "Deep Bakelite",
+        "canonical": "oklch(18.4% 0.005 67.5)",
+        "hex": "#141210",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#262523",
+          "#444240",
+          "#63615e",
+          "#84827f",
+          "#a7a4a2",
+          "#cac9c7",
+          "#efeeee"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel",
+        "canonical": "oklch(25.9% 0.006 56.1)",
+        "hex": "#262321",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#262523",
+          "#44413f",
+          "#64605e",
+          "#85817f",
+          "#a8a4a2",
+          "#cbc9c7",
+          "#efeeee"
+        ]
+      },
+      "panel-hi": {
+        "role": "neutral",
+        "displayName": "Panel Highlight",
+        "canonical": "oklch(29.7% 0.010 61.1)",
+        "hex": "#312c28",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#272422",
+          "#45413d",
+          "#66605b",
+          "#87817c",
+          "#aaa49f",
+          "#ccc8c5",
+          "#efeeed"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Cream",
+        "canonical": "oklch(92.8% 0.023 82.1)",
+        "hex": "#efe6d6",
+        "tonalRamp": [
+          "#0d0b08",
+          "#28251e",
+          "#474136",
+          "#686052",
+          "#898173",
+          "#aca496",
+          "#cdc8c0",
+          "#f0eeeb"
+        ]
+      },
+      "cream-dim": {
+        "role": "neutral",
+        "displayName": "Cream Dim",
+        "canonical": "oklch(82.1% 0.033 82.8)",
+        "hex": "#cfc3ad",
+        "tonalRamp": [
+          "#0d0b06",
+          "#2a241a",
+          "#494131",
+          "#6a604c",
+          "#8c816c",
+          "#aea490",
+          "#cfc8bc",
+          "#f0eeea"
+        ]
+      },
+      "cream-mute": {
+        "role": "neutral",
+        "displayName": "Cream Mute",
+        "canonical": "oklch(69.7% 0.034 82.7)",
+        "hex": "#a89c86",
+        "tonalRamp": [
+          "#0d0b06",
+          "#2a241a",
+          "#4a4131",
+          "#6b604b",
+          "#8c816b",
+          "#afa48f",
+          "#cfc8bc",
+          "#f0eeea"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(18.9% 0.009 75.1)",
+        "hex": "#16130f",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#272522",
+          "#44413d",
+          "#64615c",
+          "#86827c",
+          "#a8a49f",
+          "#cbc9c5",
+          "#efeeed"
+        ]
+      },
+      "brass": {
+        "role": "primary",
+        "displayName": "Brass",
+        "canonical": "oklch(66.1% 0.105 84.9)",
+        "hex": "#b08d3f",
+        "tonalRamp": [
+          "#120a00",
+          "#322200",
+          "#563d00",
+          "#7b5c03",
+          "#9e7d33",
+          "#c0a15e",
+          "#dac7a1",
+          "#f4eee2"
+        ]
+      },
+      "brass-hi": {
+        "role": "primary",
+        "displayName": "Brass Highlight",
+        "canonical": "oklch(82.4% 0.109 88.9)",
+        "hex": "#e2c26f",
+        "tonalRamp": [
+          "#110a00",
+          "#312300",
+          "#543f00",
+          "#785d02",
+          "#9b7f33",
+          "#bda25e",
+          "#d8c8a1",
+          "#f3eee2"
+        ]
+      },
+      "brass-lo": {
+        "role": "primary",
+        "displayName": "Brass Shadow",
+        "canonical": "oklch(46.1% 0.073 81.5)",
+        "hex": "#6d5424",
+        "tonalRamp": [
+          "#100a02",
+          "#30230a",
+          "#523e18",
+          "#765d2d",
+          "#997e4e",
+          "#bba174",
+          "#d6c7ac",
+          "#f3eee6"
+        ]
+      },
+      "amber": {
+        "role": "primary",
+        "displayName": "Lamp Amber",
+        "canonical": "oklch(79.8% 0.151 86.1)",
+        "hex": "#e8b52f",
+        "tonalRamp": [
+          "#110a00",
+          "#322200",
+          "#563e00",
+          "#7a5c02",
+          "#9d7e33",
+          "#bfa15e",
+          "#d9c7a1",
+          "#f3eee2"
+        ]
+      },
+      "cord-red": {
+        "role": "secondary",
+        "displayName": "Signal Red",
+        "canonical": "oklch(59.9% 0.188 31.4)",
+        "hex": "#d9452f",
+        "tonalRamp": [
+          "#170604",
+          "#3d1912",
+          "#672f25",
+          "#91493d",
+          "#b66b5d",
+          "#d98f81",
+          "#ebbdb4",
+          "#f9ebe8"
+        ]
+      },
+      "cord-blue": {
+        "role": "secondary",
+        "displayName": "Exchange Blue",
+        "canonical": "oklch(63.0% 0.142 246.4)",
+        "hex": "#2f8fd9",
+        "tonalRamp": [
+          "#010c18",
+          "#072740",
+          "#13456c",
+          "#296596",
+          "#4c88bb",
+          "#73abdc",
+          "#adcdeb",
+          "#e6f0f9"
+        ]
+      },
+      "lamp-off": {
+        "role": "neutral",
+        "displayName": "Lamp Off",
+        "canonical": "oklch(36.1% 0.048 81.9)",
+        "hex": "#4a3b1f",
+        "tonalRamp": [
+          "#0e0b05",
+          "#2c2415",
+          "#4d4029",
+          "#6f5f42",
+          "#918062",
+          "#b3a386",
+          "#d2c8b7",
+          "#f1eee9"
+        ]
+      }
+    },
+    "derivedColors": {
+      "sheen-top": "#2b2724",
+      "panel-foot": "#211e1b",
+      "plate-top": "#f6eedf",
+      "plate-foot": "#e3d8c2",
+      "plate-foot-svg": "#dfd3bb",
+      "paper-top": "#f7f0e1",
+      "amber-top": "#f3c84a",
+      "amber-foot": "#c9951f",
+      "amber-hover": [
+        "#f8d35f",
+        "#efbe3a",
+        "#d19d22"
+      ],
+      "button-sole": "#8a6412",
+      "button-sole-dark": "#0e0c0a",
+      "lamp-core": "#fff2b8",
+      "lamp-core-svg": "#fff4c2",
+      "lamp-foot": "#b9821a",
+      "lamp-off-core": "#6b5a36",
+      "lamp-off-foot-svg": "#3a2e18",
+      "socket": "#120f0d",
+      "socket-rim": "#2a2522",
+      "halo": "#0d0b0a",
+      "bat-top": "#3a3330",
+      "bat-foot": "#171412"
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; 3.4rem to 6rem by breakpoint (sm 4.6, lg 3.8, xl 5, 2xl 6)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles ending in a full stop; 2.8rem to 3.6rem, 4.2 to 4.4rem at lg on Calls and Ring. Project names use the same face at 3 to 4.4rem, line-height 0.9."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Line and step titles inside panels and lists."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running copy in cream-dim; hero lede at 1.1 to 1.2rem relaxed; measures 30 to 42rem."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Engraved plate text, field names, navigation; 0.6 to 0.72rem, tracked 0.12 to 0.16em, uppercase."
+      },
+      "ticket": {
+        "displayName": "Ticket",
+        "purpose": "Special Elite for anything typed on a toll ticket: examples, requests, readouts, form fields, ticket numbers, the contact email."
+      }
+    },
+    "shadows": [
+      {
+        "name": "plate",
+        "value": "inset 0 1px 0 rgba(255,255,255,.75), inset 0 -1px 0 rgba(0,0,0,.22), 0 1px 2px rgba(0,0,0,.6), 0 6px 14px -8px rgba(0,0,0,.8)",
+        "purpose": "Every cream traffolyte plate."
+      },
+      {
+        "name": "plate-dark",
+        "value": "inset 0 1px 0 rgba(255,255,255,.07), inset 0 -1px 0 rgba(0,0,0,.5), 0 1px 2px rgba(0,0,0,.6)",
+        "purpose": "Plates on the bakelite ground."
+      },
+      {
+        "name": "panel",
+        "value": "inset 0 1px 0 rgba(255,255,255,.06), inset 0 -2px 0 rgba(0,0,0,.5), 0 24px 48px -24px rgba(0,0,0,.9)",
+        "purpose": "Rendered panels."
+      },
+      {
+        "name": "paper",
+        "value": "0 1px 0 rgba(255,255,255,.6) inset, 0 30px 60px -30px rgba(0,0,0,.9), 0 2px 4px rgba(0,0,0,.5)",
+        "purpose": "The ticket form."
+      },
+      {
+        "name": "sole-primary",
+        "value": "inset 0 1px 0 rgba(255,255,255,.5), 0 3px 0 #8a6412, 0 10px 20px -8px rgba(232,181,47,.6)",
+        "purpose": "Primary pushbutton at rest; the 3px sole is the travel."
+      },
+      {
+        "name": "sole-primary-active",
+        "value": "inset 0 1px 0 rgba(255,255,255,.5), 0 0 0 #8a6412, 0 4px 10px -6px rgba(232,181,47,.6)",
+        "purpose": "Primary pushbutton pressed, with translateY(3px)."
+      },
+      {
+        "name": "sole-secondary",
+        "value": "inset 0 1px 0 rgba(255,255,255,.08), 0 0 0 1px rgba(176,141,63,.55), 0 3px 0 #0e0c0a",
+        "purpose": "Secondary pushbutton at rest; ring goes to full brass on hover."
+      },
+      {
+        "name": "lamp-off",
+        "value": "inset 0 0 0 1px rgba(0,0,0,.5), 0 0 0 2px var(--color-brass-lo)",
+        "purpose": "Dark jewel lamp collar."
+      },
+      {
+        "name": "lamp-lit",
+        "value": "inset 0 0 0 1px rgba(0,0,0,.3), 0 0 0 2px var(--color-brass), 0 0 12px 2px rgba(232,181,47,.55)",
+        "purpose": "Lit jewel lamp; the only glow in the system."
+      },
+      {
+        "name": "screw",
+        "value": "0 1px 2px rgba(0,0,0,.8), inset 0 -1px 1px rgba(0,0,0,.5)",
+        "purpose": "Brass screw heads."
+      },
+      {
+        "name": "toggle-collar",
+        "value": "inset 0 2px 4px rgba(0,0,0,.6), 0 1px 1px rgba(255,255,255,.08)",
+        "purpose": "Toggle well."
+      },
+      {
+        "name": "bat",
+        "value": "0 2px 3px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,255,255,.12)",
+        "purpose": "Toggle bat handle."
+      },
+      {
+        "name": "cord-shadow-svg",
+        "value": "feDropShadow dx=0 dy=5 stdDeviation=4 flood #000 at .55",
+        "purpose": "Cords hanging in front of the board."
+      },
+      {
+        "name": "lamp-glow-svg",
+        "value": "feGaussianBlur stdDeviation=5 merged under source",
+        "purpose": "Lit lamps on the board and its readout."
+      }
+    ],
+    "focus": {
+      "value": "outline: 2px solid var(--color-amber); outline-offset: 3px; border-radius: 2px",
+      "purpose": "Global :focus-visible ring; company jacks on the board draw an equivalent 2px amber circle at r+7."
+    },
+    "selection": {
+      "default": "amber on ink",
+      "paper": "cord-blue on white"
+    },
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The only easing: pushbutton travel, bat flick, lamp light, hero rise, cord draw, scroll settle."
+      },
+      {
+        "name": "press",
+        "value": "120ms",
+        "purpose": "Pushbutton transform and sole."
+      },
+      {
+        "name": "bat-flick",
+        "value": "300ms",
+        "purpose": "Toggle bat rotation; none under reduced motion."
+      },
+      {
+        "name": "lamp-light",
+        "value": "350ms",
+        "purpose": "Lamp background and halo."
+      },
+      {
+        "name": "settle",
+        "value": "700-800ms, stagger 50-60ms (rows) or 350ms (steps)",
+        "purpose": "Hero rise (y 18px) and whileInView settle (x -12 to -24px or y 16px), once."
+      },
+      {
+        "name": "cord-draw",
+        "value": "950ms",
+        "purpose": "Each board cord via pathLength 0 to 1; the station cord takes 1.6s."
+      },
+      {
+        "name": "call-loop",
+        "value": "draw A 950ms, draw B 950ms, hold 2800ms, clear 420ms",
+        "purpose": "The looping call sequence on the board; interrupted by hover or focus on a company jack; disabled under reduced motion with the first call drawn and lit."
+      },
+      {
+        "name": "marquee",
+        "value": "48s linear infinite, translateX(-50%), paused on hover",
+        "purpose": "Tool strip; a static wrapped grid under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      },
+      {
+        "name": "2xl",
+        "value": "1536px"
+      }
+    ],
+    "layout": {
+      "container": "1400px",
+      "gutters": {
+        "base": "16px",
+        "sm": "24px",
+        "lg": "40px"
+      },
+      "section": {
+        "base": "80px",
+        "lg": "112px"
+      },
+      "hero": {
+        "base": "40px top / 64px bottom",
+        "lg": "56px / 96px",
+        "xl": "40px top"
+      },
+      "grids": {
+        "hero": "5 + 7 of 12 at lg",
+        "lines": "4 + 8 at lg",
+        "ring": "5 + 7 (paper from col 6) at lg",
+        "calls-row": "4 + 5 + 3 at md",
+        "how": "3 columns at md"
+      },
+      "board": {
+        "viewBox": "640 x 716",
+        "minWidth": "520px, scrolls sideways below"
+      }
+    },
+    "fonts": {
+      "source": "@fontsource self-hosted",
+      "files": [
+        "big-shoulders-display/700",
+        "big-shoulders-display/900",
+        "barlow-condensed/500",
+        "barlow-condensed/600",
+        "barlow-condensed/700",
+        "barlow/400",
+        "barlow/500",
+        "barlow/600",
+        "special-elite/400"
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Primary pushbutton",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Amber pushbutton with a lit jewel lamp and 3px travel; the one call-to-action.",
+      "html": "<button class=\"ds-btn ds-btn-primary\"><span class=\"ds-lamp ds-lamp-lit\"></span>Patch us in</button>",
+      "css": ".ds-btn{position:relative;display:inline-flex;align-items:center;gap:.7em;font-family:'Barlow Condensed','Arial Narrow',sans-serif;text-transform:uppercase;line-height:1;font-weight:700;font-size:1.05rem;letter-spacing:.16em;padding:1.05em 1.5em 1em;border:0;border-radius:6px;cursor:pointer;text-decoration:none;transition:transform .12s cubic-bezier(.16,1,.3,1),box-shadow .12s cubic-bezier(.16,1,.3,1),background .2s}.ds-btn:active{transform:translateY(3px)}.ds-btn:focus-visible{outline:2px solid var(--color-amber,#e8b52f);outline-offset:3px}.ds-btn-primary{color:var(--color-ink,#16130f);background:linear-gradient(180deg,#f3c84a 0%,var(--color-amber,#e8b52f) 55%,#c9951f 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 3px 0 #8a6412,0 10px 20px -8px rgba(232,181,47,.6)}.ds-btn-primary:hover{background:linear-gradient(180deg,#f8d35f 0%,#efbe3a 55%,#d19d22 100%)}.ds-btn-primary:active{box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 0 0 #8a6412,0 4px 10px -6px rgba(232,181,47,.6)}.ds-lamp{display:inline-block;width:.7em;height:.7em;border-radius:50%;background:radial-gradient(circle at 40% 35%,#6b5a36,var(--color-lamp-off,#4a3b1f) 70%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.5),0 0 0 2px var(--color-brass-lo,#6d5424);transition:background .35s cubic-bezier(.16,1,.3,1),box-shadow .35s cubic-bezier(.16,1,.3,1)}.ds-lamp-lit,.ds-plate:hover .ds-lamp,.ds-plate:focus-visible .ds-lamp{background:radial-gradient(circle at 40% 35%,#fff2b8,var(--color-amber,#e8b52f) 55%,#b9821a 100%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.3),0 0 0 2px var(--color-brass,#b08d3f),0 0 12px 2px rgba(232,181,47,.55)}"
+    },
+    {
+      "name": "Secondary pushbutton",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Panel-faced pushbutton with a brass ring and a near-black sole.",
+      "html": "<button class=\"ds-btn ds-btn-secondary\">See completed calls</button>",
+      "css": ".ds-btn{position:relative;display:inline-flex;align-items:center;gap:.7em;font-family:'Barlow Condensed','Arial Narrow',sans-serif;text-transform:uppercase;line-height:1;font-weight:700;font-size:1.05rem;letter-spacing:.16em;padding:1.05em 1.5em 1em;border:0;border-radius:6px;cursor:pointer;text-decoration:none;transition:transform .12s cubic-bezier(.16,1,.3,1),box-shadow .12s cubic-bezier(.16,1,.3,1),background .2s}.ds-btn:active{transform:translateY(3px)}.ds-btn:focus-visible{outline:2px solid var(--color-amber,#e8b52f);outline-offset:3px}.ds-btn-secondary{color:var(--color-cream,#efe6d6);background:linear-gradient(180deg,var(--color-panel-hi,#312c28),var(--color-panel,#262321));box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 0 0 1px rgba(176,141,63,.55),0 3px 0 #0e0c0a}.ds-btn-secondary:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 0 0 1px var(--color-brass,#b08d3f),0 3px 0 #0e0c0a}.ds-btn-secondary:active{box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 0 0 1px var(--color-brass,#b08d3f),0 0 0 #0e0c0a}"
+    },
+    {
+      "name": "Traffolyte plate",
+      "kind": "chip",
+      "refersTo": "plate",
+      "description": "Cream engraved label plate; the chip, tag, nav item and status. Its lamp lights on hover or focus.",
+      "html": "<a href=\"#\" class=\"ds-plate\"><span class=\"ds-lamp\"></span>Completed calls</a> <span class=\"ds-plate\">FalkorDB</span> <span class=\"ds-plate ds-plate-dark\"><span class=\"ds-lamp ds-lamp-lit\"></span>Exchange open</span>",
+      "css": ".ds-plate{display:inline-flex;align-items:center;gap:.5em;background:linear-gradient(180deg,#f6eedf 0%,var(--color-cream,#efe6d6) 60%,#e3d8c2 100%);color:var(--color-ink,#16130f);font-family:'Barlow Condensed','Arial Narrow',sans-serif;text-transform:uppercase;line-height:1;font-weight:600;font-size:.72rem;letter-spacing:.14em;padding:.5em .8em .45em;border-radius:3px;text-decoration:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.75),inset 0 -1px 0 rgba(0,0,0,.22),0 1px 2px rgba(0,0,0,.6),0 6px 14px -8px rgba(0,0,0,.8);text-shadow:0 1px 0 rgba(255,255,255,.85),0 -1px 0 rgba(0,0,0,.45)}.ds-plate:focus-visible{outline:2px solid var(--color-amber,#e8b52f);outline-offset:3px;border-radius:2px}.ds-plate-dark{background:linear-gradient(180deg,var(--color-panel-hi,#312c28),var(--color-panel,#262321));color:var(--color-cream-dim,#cfc3ad);text-shadow:0 -1px 0 rgba(0,0,0,.6);box-shadow:inset 0 1px 0 rgba(255,255,255,.07),inset 0 -1px 0 rgba(0,0,0,.5),0 1px 2px rgba(0,0,0,.6)}.ds-lamp{display:inline-block;width:.7em;height:.7em;border-radius:50%;background:radial-gradient(circle at 40% 35%,#6b5a36,var(--color-lamp-off,#4a3b1f) 70%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.5),0 0 0 2px var(--color-brass-lo,#6d5424);transition:background .35s cubic-bezier(.16,1,.3,1),box-shadow .35s cubic-bezier(.16,1,.3,1)}.ds-lamp-lit,.ds-plate:hover .ds-lamp,.ds-plate:focus-visible .ds-lamp{background:radial-gradient(circle at 40% 35%,#fff2b8,var(--color-amber,#e8b52f) 55%,#b9821a 100%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.3),0 0 0 2px var(--color-brass,#b08d3f),0 0 12px 2px rgba(232,181,47,.55)}"
+    },
+    {
+      "name": "Rendered panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Bakelite panel with sheen, brass hairline and four slotted screws; the container for the board and the lines list.",
+      "html": "<div class=\"ds-panel\"><span class=\"ds-screw\" style=\"left:8px;top:8px;--slot:15deg\"></span><span class=\"ds-screw\" style=\"right:8px;top:8px;--slot:-40deg\"></span><span class=\"ds-screw\" style=\"left:8px;bottom:8px;--slot:70deg\"></span><span class=\"ds-screw\" style=\"right:8px;bottom:8px;--slot:-10deg\"></span><h3 class=\"ds-title\">Custom AI builds</h3><p class=\"ds-sub\">Built to order.</p><p class=\"ds-body\">Agents, bots and internal tools built by us end to end, with a human approval gate on anything risky.</p></div>",
+      "css": ".ds-panel{position:relative;padding:32px;background:radial-gradient(110% 90% at 20% 0%,rgba(255,255,255,.06),transparent 60%),linear-gradient(180deg,var(--color-panel-hi,#312c28) 0%,var(--color-panel,#262321) 40%,#211e1b 100%);border:1px solid rgba(176,141,63,.35);border-radius:14px;box-shadow:inset 0 1px 0 rgba(255,255,255,.06),inset 0 -2px 0 rgba(0,0,0,.5),0 24px 48px -24px rgba(0,0,0,.9);color:var(--color-cream,#efe6d6)}.ds-screw{position:absolute;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--color-brass-hi,#e2c26f),var(--color-brass,#b08d3f) 45%,var(--color-brass-lo,#6d5424) 100%);box-shadow:0 1px 2px rgba(0,0,0,.8),inset 0 -1px 1px rgba(0,0,0,.5)}.ds-screw::after{content:'';position:absolute;left:2px;right:2px;top:5px;height:2px;background:rgba(0,0,0,.7);transform:rotate(var(--slot,20deg))}.ds-title{margin:0;font-family:'Big Shoulders Display','Arial Narrow',sans-serif;font-weight:900;font-size:2.3rem;line-height:.92;letter-spacing:-.005em;text-transform:uppercase}.ds-sub{margin:4px 0 0;font-family:'Barlow Condensed','Arial Narrow',sans-serif;text-transform:uppercase;line-height:1;font-weight:600;font-size:1.1rem;letter-spacing:.08em;color:var(--color-brass-hi,#e2c26f)}.ds-body{margin:12px 0 0;font-family:Barlow,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;color:var(--color-cream-dim,#cfc3ad);max-width:40rem}"
+    },
+    {
+      "name": "Ticket field on paper",
+      "kind": "input",
+      "refersTo": "input-ticket",
+      "description": "Typewriter field on cream ticket paper: label above, single ink underline, blue on focus, red caret.",
+      "html": "<div class=\"ds-paper\"><label class=\"ds-field-label\" for=\"ds-need\">What do you need<span class=\"ds-req\">*</span></label><textarea id=\"ds-need\" class=\"ds-field\" rows=\"2\" placeholder=\"An agent that answers customer email in our tone, and a person to run it for the first month.\"></textarea></div>",
+      "css": ".ds-paper{padding:28px 24px 32px;border-radius:4px;background:repeating-linear-gradient(180deg,transparent 0 31px,rgba(47,143,217,.18) 31px 32px),linear-gradient(180deg,#f7f0e1,var(--color-cream,#efe6d6));color:var(--color-ink,#16130f);box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 30px 60px -30px rgba(0,0,0,.9),0 2px 4px rgba(0,0,0,.5)}.ds-field-label{display:block;font-family:'Barlow Condensed','Arial Narrow',sans-serif;text-transform:uppercase;line-height:1;font-weight:600;font-size:.66rem;letter-spacing:.16em;color:rgba(22,19,15,.7)}.ds-req{margin-left:4px;color:var(--color-cord-red,#d9452f)}.ds-field{display:block;width:100%;margin-top:4px;padding:6px 0;border:0;border-bottom:1px solid rgba(22,19,15,.4);background:transparent;font-family:'Special Elite','Courier New',monospace;font-size:1.05rem;color:var(--color-ink,#16130f);caret-color:var(--color-cord-red,#d9452f);resize:vertical}.ds-field::placeholder{color:rgba(22,19,15,.6)}.ds-field:focus{outline:none;border-bottom-color:var(--color-cord-blue,#2f8fd9)}.ds-field::selection{background:var(--color-cord-blue,#2f8fd9);color:#fff}"
+    },
+    {
+      "name": "Header strip",
+      "kind": "nav",
+      "refersTo": "plate",
+      "description": "Sticky bakelite strip: jack mark and lowercase wordmark, plate links with lamps, primary pushbutton.",
+      "html": "<header class=\"ds-header\"><a href=\"#\" class=\"ds-brand\"><svg width=\"30\" height=\"30\" viewBox=\"0 0 64 64\" aria-hidden=\"true\"><defs><radialGradient id=\"dsBrass\" cx=\"35%\" cy=\"30%\" r=\"75%\"><stop offset=\"0\" stop-color=\"#e2c26f\"/><stop offset=\"0.45\" stop-color=\"#b08d3f\"/><stop offset=\"1\" stop-color=\"#6d5424\"/></radialGradient></defs><circle cx=\"32\" cy=\"34\" r=\"21\" fill=\"url(#dsBrass)\"/><circle cx=\"32\" cy=\"34\" r=\"14\" fill=\"#2a2522\"/><circle cx=\"32\" cy=\"34\" r=\"6\" fill=\"#0d0c0b\"/><circle cx=\"50\" cy=\"12\" r=\"6\" fill=\"#e8b52f\"/></svg><span class=\"ds-wordmark\">urelimitless</span></a><nav class=\"ds-nav\"><a href=\"#\" class=\"ds-plate\"><span class=\"ds-lamp\"></span>Lines</a><a href=\"#\" class=\"ds-plate\"><span class=\"ds-lamp\"></span>How a call goes</a><a href=\"#\" class=\"ds-plate\"><span class=\"ds-lamp\"></span>Completed calls</a></nav><a href=\"#\" class=\"ds-btn ds-btn-primary\"><span class=\"ds-lamp ds-lamp-lit\"></span>Patch us in</a></header>",
+      "css": ".ds-header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 24px;background:rgba(29,27,25,.85);backdrop-filter:blur(4px);border-bottom:1px solid rgba(176,141,63,.4)}.ds-brand{display:flex;align-items:center;gap:12px;text-decoration:none}.ds-wordmark{font-family:'Big Shoulders Display','Arial Narrow',sans-serif;font-weight:900;font-size:1.9rem;line-height:.92;color:var(--color-cream,#efe6d6)}.ds-nav{display:flex;gap:8px}.ds-plate{display:inline-flex;align-items:center;gap:.5em;background:linear-gradient(180deg,#f6eedf 0%,var(--color-cream,#efe6d6) 60%,#e3d8c2 100%);color:var(--color-ink,#16130f);font-family:'Barlow Condensed','Arial Narrow',sans-serif;text-transform:uppercase;line-height:1;font-weight:600;font-size:.72rem;letter-spacing:.14em;padding:.5em .8em .45em;border-radius:3px;text-decoration:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.75),inset 0 -1px 0 rgba(0,0,0,.22),0 1px 2px rgba(0,0,0,.6),0 6px 14px -8px rgba(0,0,0,.8);text-shadow:0 1px 0 rgba(255,255,255,.85),0 -1px 0 rgba(0,0,0,.45)}.ds-plate:focus-visible{outline:2px solid var(--color-amber,#e8b52f);outline-offset:3px;border-radius:2px}.ds-plate-dark{background:linear-gradient(180deg,var(--color-panel-hi,#312c28),var(--color-panel,#262321));color:var(--color-cream-dim,#cfc3ad);text-shadow:0 -1px 0 rgba(0,0,0,.6);box-shadow:inset 0 1px 0 rgba(255,255,255,.07),inset 0 -1px 0 rgba(0,0,0,.5),0 1px 2px rgba(0,0,0,.6)}.ds-btn{position:relative;display:inline-flex;align-items:center;gap:.7em;font-family:'Barlow Condensed','Arial Narrow',sans-serif;text-transform:uppercase;line-height:1;font-weight:700;font-size:.95rem;letter-spacing:.16em;padding:1.05em 1.5em 1em;border:0;border-radius:6px;cursor:pointer;text-decoration:none;transition:transform .12s cubic-bezier(.16,1,.3,1),box-shadow .12s cubic-bezier(.16,1,.3,1),background .2s}.ds-btn:active{transform:translateY(3px)}.ds-btn:focus-visible{outline:2px solid var(--color-amber,#e8b52f);outline-offset:3px}.ds-btn-primary{color:var(--color-ink,#16130f);background:linear-gradient(180deg,#f3c84a 0%,var(--color-amber,#e8b52f) 55%,#c9951f 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 3px 0 #8a6412,0 10px 20px -8px rgba(232,181,47,.6)}.ds-btn-primary:hover{background:linear-gradient(180deg,#f8d35f 0%,#efbe3a 55%,#d19d22 100%)}.ds-btn-primary:active{box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 0 0 #8a6412,0 4px 10px -6px rgba(232,181,47,.6)}.ds-lamp{display:inline-block;width:.7em;height:.7em;border-radius:50%;background:radial-gradient(circle at 40% 35%,#6b5a36,var(--color-lamp-off,#4a3b1f) 70%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.5),0 0 0 2px var(--color-brass-lo,#6d5424);transition:background .35s cubic-bezier(.16,1,.3,1),box-shadow .35s cubic-bezier(.16,1,.3,1)}.ds-lamp-lit,.ds-plate:hover .ds-lamp,.ds-plate:focus-visible .ds-lamp{background:radial-gradient(circle at 40% 35%,#fff2b8,var(--color-amber,#e8b52f) 55%,#b9821a 100%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.3),0 0 0 2px var(--color-brass,#b08d3f),0 0 12px 2px rgba(232,181,47,.55)}"
+    },
+    {
+      "name": "Toggle with lamp",
+      "kind": "custom",
+      "refersTo": "toggle",
+      "description": "Bat-handle toggle on a brass collar with a jewel lamp and line plate; on flicks the bat up and lights the lamp.",
+      "html": "<div class=\"ds-station\"><span class=\"ds-toggle ds-is-on\"><span class=\"ds-bat\"></span></span><span class=\"ds-lamp ds-lamp-lit\"></span><span class=\"ds-plate\">Line 1</span><span class=\"ds-state\">Open</span></div><div class=\"ds-station\"><span class=\"ds-toggle\"><span class=\"ds-bat\"></span></span><span class=\"ds-lamp\"></span><span class=\"ds-plate\">Line 2</span><span class=\"ds-state\">Closed</span></div>",
+      "css": ".ds-station{display:inline-flex;flex-direction:column;align-items:center;gap:12px;margin-right:16px;vertical-align:top}.ds-toggle{position:relative;width:28px;height:46px;border-radius:14px;background:radial-gradient(circle at 50% 50%,var(--color-brass-hi,#e2c26f),var(--color-brass,#b08d3f) 50%,var(--color-brass-lo,#6d5424) 100%);box-shadow:inset 0 2px 4px rgba(0,0,0,.6),0 1px 1px rgba(255,255,255,.08);flex:none}.ds-toggle::before{content:'';position:absolute;left:50%;top:50%;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:#0d0b0a}.ds-bat{position:absolute;left:50%;top:50%;width:12px;height:30px;margin-left:-6px;border-radius:6px;background:linear-gradient(180deg,#3a3330,#171412);box-shadow:0 2px 3px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.12);transform-origin:50% 0;transform:rotate(180deg) translateY(2px);transition:transform .3s cubic-bezier(.16,1,.3,1)}.ds-is-on .ds-bat{transform:rotate(0deg) translateY(2px)}.ds-lamp{display:inline-block;width:.7em;height:.7em;border-radius:50%;background:radial-gradient(circle at 40% 35%,#6b5a36,var(--color-lamp-off,#4a3b1f) 70%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.5),0 0 0 2px var(--color-brass-lo,#6d5424);transition:background .35s cubic-bezier(.16,1,.3,1),box-shadow .35s cubic-bezier(.16,1,.3,1)}.ds-lamp-lit,.ds-plate:hover .ds-lamp,.ds-plate:focus-visible .ds-lamp{background:radial-gradient(circle at 40% 35%,#fff2b8,var(--color-amber,#e8b52f) 55%,#b9821a 100%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.3),0 0 0 2px var(--color-brass,#b08d3f),0 0 12px 2px rgba(232,181,47,.55)}.ds-plate{display:inline-flex;align-items:center;gap:.5em;background:linear-gradient(180deg,#f6eedf 0%,var(--color-cream,#efe6d6) 60%,#e3d8c2 100%);color:var(--color-ink,#16130f);font-family:'Barlow Condensed','Arial Narrow',sans-serif;text-transform:uppercase;line-height:1;font-weight:600;font-size:.6rem;letter-spacing:.14em;padding:.5em .8em .45em;border-radius:3px;text-decoration:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.75),inset 0 -1px 0 rgba(0,0,0,.22),0 1px 2px rgba(0,0,0,.6),0 6px 14px -8px rgba(0,0,0,.8);text-shadow:0 1px 0 rgba(255,255,255,.85),0 -1px 0 rgba(0,0,0,.45)}.ds-plate:focus-visible{outline:2px solid var(--color-amber,#e8b52f);outline-offset:3px;border-radius:2px}.ds-plate-dark{background:linear-gradient(180deg,var(--color-panel-hi,#312c28),var(--color-panel,#262321));color:var(--color-cream-dim,#cfc3ad);text-shadow:0 -1px 0 rgba(0,0,0,.6);box-shadow:inset 0 1px 0 rgba(255,255,255,.07),inset 0 -1px 0 rgba(0,0,0,.5),0 1px 2px rgba(0,0,0,.6)}.ds-state{font-family:'Barlow Condensed','Arial Narrow',sans-serif;text-transform:uppercase;line-height:1;font-weight:600;font-size:.62rem;letter-spacing:.16em;color:var(--color-brass-hi,#e2c26f)}"
+    },
+    {
+      "name": "Jack with lamp and plate",
+      "kind": "custom",
+      "refersTo": "screw",
+      "description": "The board's jack: dark halo, brass bevel ring, socket, contact, 5px jewel lamp at the upper right, engraved plate below. The brand mark is the same silhouette.",
+      "html": "<svg width=\"140\" height=\"96\" viewBox=\"-70 -30 140 96\" aria-hidden=\"true\"><defs><radialGradient id=\"dsBrass\" cx=\"35%\" cy=\"30%\" r=\"75%\"><stop offset=\"0\" stop-color=\"#e2c26f\"/><stop offset=\"0.45\" stop-color=\"#b08d3f\"/><stop offset=\"1\" stop-color=\"#6d5424\"/></radialGradient><radialGradient id=\"dsHole\" cx=\"50%\" cy=\"45%\" r=\"60%\"><stop offset=\"0\" stop-color=\"#000\"/><stop offset=\"0.7\" stop-color=\"#120f0d\"/><stop offset=\"1\" stop-color=\"#2a2522\"/></radialGradient><radialGradient id=\"dsLampOn\" cx=\"40%\" cy=\"35%\" r=\"70%\"><stop offset=\"0\" stop-color=\"#fff4c2\"/><stop offset=\"0.5\" stop-color=\"#e8b52f\"/><stop offset=\"1\" stop-color=\"#b9821a\"/></radialGradient><linearGradient id=\"dsPlate\" x1=\"0\" x2=\"0\" y1=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#f6eedf\"/><stop offset=\"0.6\" stop-color=\"#efe6d6\"/><stop offset=\"1\" stop-color=\"#dfd3bb\"/></linearGradient><filter id=\"dsGlow\" x=\"-150%\" y=\"-150%\" width=\"400%\" height=\"400%\"><feGaussianBlur stdDeviation=\"5\" result=\"b\"/><feMerge><feMergeNode in=\"b\"/><feMergeNode in=\"SourceGraphic\"/></feMerge></filter></defs><circle r=\"21\" fill=\"#0d0b0a\" opacity=\"0.6\"/><circle r=\"17\" fill=\"url(#dsBrass)\"/><circle r=\"12\" fill=\"url(#dsHole)\"/><circle r=\"6\" fill=\"#000\"/><circle cx=\"23\" cy=\"-15\" r=\"5\" fill=\"url(#dsLampOn)\" stroke=\"#6d5424\" stroke-width=\"1.5\" filter=\"url(#dsGlow)\"/><rect x=\"-62\" y=\"26\" width=\"124\" height=\"22\" rx=\"2\" fill=\"url(#dsPlate)\"/><rect x=\"-62\" y=\"26\" width=\"124\" height=\"22\" rx=\"2\" fill=\"none\" stroke=\"#000\" stroke-opacity=\"0.45\"/><text text-anchor=\"middle\" font-family=\"Barlow Condensed, Arial Narrow, sans-serif\" font-weight=\"600\" font-size=\"11.5\" letter-spacing=\"0.12em\" y=\"40\" fill=\"#000\" fill-opacity=\"0.45\">LOGISTICS COMPANY</text><text text-anchor=\"middle\" font-family=\"Barlow Condensed, Arial Narrow, sans-serif\" font-weight=\"600\" font-size=\"11.5\" letter-spacing=\"0.12em\" y=\"42\" fill=\"#fff\" fill-opacity=\"0.8\">LOGISTICS COMPANY</text><text text-anchor=\"middle\" font-family=\"Barlow Condensed, Arial Narrow, sans-serif\" font-weight=\"600\" font-size=\"11.5\" letter-spacing=\"0.12em\" y=\"41\" fill=\"#16130f\">LOGISTICS COMPANY</text></svg>",
+      "css": "svg{display:block}"
+    },
+    {
+      "name": "Ticket readout",
+      "kind": "custom",
+      "refersTo": "input-ticket",
+      "description": "Typewriter example chip on deep bakelite with a brass hairline; the inline ticket voice.",
+      "html": "<p class=\"ds-ticket\"><span class=\"ds-ticket-dim\">Example · </span>PATCHED: Claude + Gmail API → agent engineer. Est. 3 weeks.</p>",
+      "css": ".ds-ticket{display:inline-block;margin:0;padding:8px 12px;border:1px solid rgba(176,141,63,.4);border-radius:4px;background:var(--color-bakelite-deep,#141210);font-family:'Special Elite','Courier New',monospace;font-size:.85rem;line-height:1.375;color:var(--color-amber,#e8b52f)}.ds-ticket-dim{color:var(--color-cream-mute,#a89c86)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Switchboard",
+    "overview": "The site is a telephone exchange operator's board. The ground is warm bakelite near-black with a soft radial sheen pooled toward the upper left; rendered panels sit one step lighter on it, framed by a brass hairline and four slotted brass screws. Everything a visitor reads is either engraved into a cream traffolyte plate (labels, navigation, tool names, statuses), set in heavy condensed display caps directly on the bakelite (headlines), or typed on a toll ticket (examples, requests, the form). The three cord colors, signal red, exchange blue and lamp amber, carry the only saturated color on the page and appear only on cords, lamps, carets and the primary pushbutton.\n\nControls are physical. Buttons have a visible 3px sole and depress on press; toggles have a bat handle that flicks through 180 degrees; jewel lamps sit dark on a brass collar until a line is live, then glow. Depth comes from inset bevels and short, dark drop shadows on each material, never from a floating-card vocabulary. Motion has a job: cords draw themselves along a catenary, lamps light when a line connects, tickets settle in on scroll, and all of it stops (static, lit, connected) under reduced motion.\n\nDensity is editorial: one 1400px column, generous 80 to 112px section rhythm, left-weighted headlines against brass hairlines, and long lists (lines, calls) divided by rules rather than boxed into same-size cards. The build refuses the category default (centred gradient headline, logo row, bento of feature cards on navy) and the white SaaS grid alike.",
+    "keyCharacteristics": [
+      "Warm bakelite ground with a fixed radial sheen; panels one step lighter with a brass hairline and corner screws",
+      "Cream traffolyte plates with engraved uppercase labels are the universal small-text container",
+      "Display headlines in Big Shoulders Display 900, uppercase, line-height 0.92, set in cream directly on the ground",
+      "Three cord colors only: signal red, exchange blue, lamp amber; amber doubles as the one call-to-action color",
+      "Physical controls: pushbutton travel, bat toggles, jewel lamps on brass collars",
+      "Toll-ticket typewriter voice (Special Elite) for examples, requests, readouts and the request form",
+      "Reduced motion leaves every cord drawn and every lamp lit"
+    ],
+    "rules": [
+      {
+        "name": "The Cord Rule",
+        "body": "Saturated color belongs to cords, lamps and the primary pushbutton. Red and blue never fill a surface; amber fills exactly one kind of surface, the primary button.",
+        "section": "colors"
+      },
+      {
+        "name": "The Bevel Rule",
+        "body": "Brass is never flat. Every brass element (jack, screw, toggle collar, plug, mark) is a radial gradient lit from 35% / 30% with stops `brass-hi` at 0, `brass` at 45%, `brass-lo` at 100%; hairlines use `brass` at reduced alpha.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Grounds Rule",
+        "body": "Text lives on one of two grounds: cream-on-bakelite (headlines, body) or ink-on-cream (plates, paper, primary button). There is no third text pairing.",
+        "section": "colors"
+      },
+      {
+        "name": "The Engraving Rule",
+        "body": "Text on a plate is uppercase Barlow Condensed with a 1px white highlight below and a dark shadow above (`text-shadow: 0 1px 0 rgba(255,255,255,.85), 0 -1px 0 rgba(0,0,0,.45)`), so it reads as cut into the material. In SVG the same effect is three stacked text nodes: 45% black one unit above, 80% white one unit below, ink between.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ticket Voice Rule",
+        "body": "Anything the operator would type on a toll ticket (examples, requests, readouts, form fields, ticket numbers, the contact email) is set in Special Elite. Nothing else is.",
+        "section": "typography"
+      },
+      {
+        "name": "The Full Stop Rule",
+        "body": "Headlines and section titles end in a period. Labels and plates never do.",
+        "section": "typography"
+      },
+      {
+        "name": "The Sole Rule",
+        "body": "A pushbutton's depth is a 3px hard sole beneath it, and pressing removes exactly that 3px. No other element uses a hard offset shadow; panels and paper use the long negative-spread shadow.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Lamp Glow Rule",
+        "body": "Glow is reserved for lit lamps (12px amber halo) and the connected lamp on the board readout (SVG blur 5). Panel edges, buttons and text never glow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do put every small uppercase label on a traffolyte plate or set it as a label in `brass-hi` or `cream-mute`; plates are the chip, the tag, the nav item and the status.",
+      "Do render brass as the three-stop radial bevel and hairlines as `brass` at 30 to 55% alpha.",
+      "Do lead a primary pushbutton with a lit lamp and give every pushbutton its 3px sole and 3px travel.",
+      "Do set anything ticket-like in Special Elite, including form fields, and keep the request form on cream paper with ruled lines.",
+      "Do keep headlines uppercase Big Shoulders Display 900 at line-height 0.92 in cream, ending in a full stop, and keep the wordmark lowercase and normal case.",
+      "Do divide long lists with brass hairlines and asymmetric grid columns (4+8, 5+7, 4+5+3) rather than equal cards.",
+      "Do give every motion a reduced-motion end state that is drawn, lit and connected (cords at full length, toggles on, lamps lit, marquee static).",
+      "Do keep amber for the focus ring (2px outline, 3px offset) and for selection."
+    ],
+    "donts": [
+      "Don't use gradient text; display type is flat cream.",
+      "Don't put red or blue on a surface; they are cords, carets, rules and error text only.",
+      "Don't glow anything but a lamp; no glowing panel edges, no neon outlines, no colored button halos beyond the primary's warm sole shadow.",
+      "Don't use frosted or translucent content surfaces; the sticky header strip at 85% bakelite with a 4px blur is the single translucent element and stays that way.",
+      "Don't use hard offset shadows on anything but the pushbutton sole.",
+      "Don't flatten brass to a solid fill or draw borders in cream or white.",
+      "Don't set a plate's text in mixed case, or a headline without its period.",
+      "Don't introduce a third text pairing (for example cream text on cream, or amber running copy); amber text is for connected readouts and ticket examples only."
+    ]
+  }
+}

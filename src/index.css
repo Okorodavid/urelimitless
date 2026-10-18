@@ -1,0 +1,352 @@
+@import '@fontsource/big-shoulders-display/700';
+@import '@fontsource/big-shoulders-display/900';
+@import '@fontsource/barlow-condensed/500.css';
+@import '@fontsource/barlow-condensed/600.css';
+@import '@fontsource/barlow-condensed/700.css';
+@import '@fontsource/barlow/400.css';
+@import '@fontsource/barlow/500.css';
+@import '@fontsource/barlow/600.css';
+@import '@fontsource/special-elite/400.css';
+@import 'tailwindcss';
+
+@theme {
+  --color-bakelite: #1d1b19;
+  --color-bakelite-deep: #141210;
+  --color-panel: #262321;
+  --color-panel-hi: #312c28;
+  --color-cream: #efe6d6;
+  --color-cream-dim: #cfc3ad;
+  --color-cream-mute: #a89c86;
+  --color-ink: #16130f;
+  --color-brass: #b08d3f;
+  --color-brass-hi: #e2c26f;
+  --color-brass-lo: #6d5424;
+  --color-cord-red: #d9452f;
+  --color-cord-blue: #2f8fd9;
+  --color-amber: #e8b52f;
+  --color-lamp-off: #4a3b1f;
+
+  --font-display: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
+  --font-label: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --font-sans: 'Barlow', system-ui, sans-serif;
+  --font-ticket: 'Special Elite', 'Courier New', monospace;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scrollbar-color: var(--color-brass-lo) var(--color-bakelite-deep);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  body {
+    background:
+      radial-gradient(120% 70% at 30% -10%, #2b2724 0%, var(--color-bakelite) 55%, var(--color-bakelite-deep) 100%)
+        fixed,
+      var(--color-bakelite);
+    color: var(--color-cream);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  ::selection {
+    background: var(--color-amber);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-amber);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-bakelite-deep);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--color-brass), var(--color-brass-lo));
+    border: 3px solid var(--color-bakelite-deep);
+    border-radius: 8px;
+  }
+  a {
+    text-underline-offset: 0.18em;
+  }
+  input,
+  textarea {
+    caret-color: var(--color-cord-red);
+  }
+}
+
+@layer components {
+  /* A cream traffolyte label plate with engraved uppercase text. */
+  .plate {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    background: linear-gradient(180deg, #f6eedf 0%, var(--color-cream) 60%, #e3d8c2 100%);
+    color: var(--color-ink);
+    font-family: var(--font-label);
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 0.5em 0.8em 0.45em;
+    border-radius: 3px;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.75),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.22),
+      0 1px 2px rgba(0, 0, 0, 0.6),
+      0 6px 14px -8px rgba(0, 0, 0, 0.8);
+    text-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.85),
+      0 -1px 0 rgba(0, 0, 0, 0.45);
+  }
+  .plate-dark {
+    background: linear-gradient(180deg, var(--color-panel-hi), var(--color-panel));
+    color: var(--color-cream-dim);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.07),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.5),
+      0 1px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Rendered bakelite panel with a soft sheen and a brass hairline. */
+  .panel {
+    position: relative;
+    background:
+      radial-gradient(110% 90% at 20% 0%, rgba(255, 255, 255, 0.06), transparent 60%),
+      linear-gradient(180deg, var(--color-panel-hi) 0%, var(--color-panel) 40%, #211e1b 100%);
+    border: 1px solid rgba(176, 141, 63, 0.35);
+    border-radius: 14px;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.06),
+      inset 0 -2px 0 rgba(0, 0, 0, 0.5),
+      0 24px 48px -24px rgba(0, 0, 0, 0.9);
+  }
+
+  /* Brass screw head with a slot, placed at panel corners. */
+  .screw {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, var(--color-brass-hi), var(--color-brass) 45%, var(--color-brass-lo) 100%);
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.8),
+      inset 0 -1px 1px rgba(0, 0, 0, 0.5);
+  }
+  .screw::after {
+    content: '';
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 5px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.7);
+    transform: rotate(var(--slot, 20deg));
+  }
+
+  /* Jewel lamp: a small incandescent indicator. */
+  .lamp {
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 35%, #6b5a36, var(--color-lamp-off) 70%);
+    box-shadow:
+      inset 0 0 0 1px rgba(0, 0, 0, 0.5),
+      0 0 0 2px var(--color-brass-lo);
+    transition:
+      background 0.35s var(--ease-out-expo),
+      box-shadow 0.35s var(--ease-out-expo);
+  }
+  .lamp.is-lit,
+  .group:hover .lamp,
+  .group:focus-visible .lamp {
+    background: radial-gradient(circle at 40% 35%, #fff2b8, var(--color-amber) 55%, #b9821a 100%);
+    box-shadow:
+      inset 0 0 0 1px rgba(0, 0, 0, 0.3),
+      0 0 0 2px var(--color-brass),
+      0 0 12px 2px rgba(232, 181, 47, 0.55);
+  }
+
+  /* Pushbutton with physical travel. */
+  .btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7em;
+    font-family: var(--font-label);
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 1.05em 1.5em 1em;
+    border-radius: 6px;
+    transition:
+      transform 0.12s var(--ease-out-expo),
+      box-shadow 0.12s var(--ease-out-expo),
+      background 0.2s;
+    will-change: transform;
+  }
+  .btn:active {
+    transform: translateY(3px);
+  }
+  .btn-primary {
+    color: var(--color-ink);
+    background: linear-gradient(180deg, #f3c84a 0%, var(--color-amber) 55%, #c9951f 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.5),
+      0 3px 0 #8a6412,
+      0 10px 20px -8px rgba(232, 181, 47, 0.6);
+  }
+  .btn-primary:hover {
+    background: linear-gradient(180deg, #f8d35f 0%, #efbe3a 55%, #d19d22 100%);
+  }
+  .btn-primary:active {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.5),
+      0 0 0 #8a6412,
+      0 4px 10px -6px rgba(232, 181, 47, 0.6);
+  }
+  .btn-secondary {
+    color: var(--color-cream);
+    background: linear-gradient(180deg, var(--color-panel-hi), var(--color-panel));
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.08),
+      0 0 0 1px rgba(176, 141, 63, 0.55),
+      0 3px 0 #0e0c0a;
+  }
+  .btn-secondary:hover {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.1),
+      0 0 0 1px var(--color-brass),
+      0 3px 0 #0e0c0a;
+  }
+  .btn-secondary:active {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.08),
+      0 0 0 1px var(--color-brass),
+      0 0 0 #0e0c0a;
+  }
+
+  /* Toggle switch with travel: a bat handle on a brass collar. */
+  .toggle {
+    position: relative;
+    width: 28px;
+    height: 46px;
+    border-radius: 14px;
+    background: radial-gradient(circle at 50% 50%, var(--color-brass-hi), var(--color-brass) 50%, var(--color-brass-lo) 100%);
+    box-shadow:
+      inset 0 2px 4px rgba(0, 0, 0, 0.6),
+      0 1px 1px rgba(255, 255, 255, 0.08);
+    flex: none;
+  }
+  .toggle::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    margin: -5px 0 0 -5px;
+    border-radius: 50%;
+    background: #0d0b0a;
+  }
+  .toggle .bat {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 12px;
+    height: 30px;
+    margin-left: -6px;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #3a3330, #171412);
+    box-shadow:
+      0 2px 3px rgba(0, 0, 0, 0.8),
+      inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    transform-origin: 50% 0;
+    transform: rotate(180deg) translateY(2px);
+    transition: transform 0.3s var(--ease-out-expo);
+  }
+  .toggle.is-on .bat {
+    transform: rotate(0deg) translateY(2px);
+  }
+
+  .display {
+    font-family: var(--font-display);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.005em;
+    line-height: 0.92;
+    text-wrap: balance;
+  }
+  .label {
+    font-family: var(--font-label);
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .ticket {
+    font-family: var(--font-ticket);
+  }
+
+  /* Cream ticket paper for the request form. */
+  .paper {
+    background:
+      repeating-linear-gradient(180deg, transparent 0 31px, rgba(47, 143, 217, 0.18) 31px 32px),
+      linear-gradient(180deg, #f7f0e1, var(--color-cream));
+    color: var(--color-ink);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.6) inset,
+      0 30px 60px -30px rgba(0, 0, 0, 0.9),
+      0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .paper::selection,
+  .paper *::selection {
+    background: var(--color-cord-blue);
+    color: #fff;
+  }
+
+  .brass-rule {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-brass) 15%, var(--color-brass) 85%, transparent);
+    opacity: 0.6;
+  }
+
+  .marquee {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    animation: marquee 48s linear infinite;
+  }
+  .marquee:hover {
+    animation-play-state: paused;
+  }
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .marquee {
+      animation: none;
+      width: auto;
+      flex-wrap: wrap;
+    }
+    .toggle .bat {
+      transition: none;
+    }
+  }
+}
