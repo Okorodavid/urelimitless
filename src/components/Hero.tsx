@@ -1,4 +1,4 @@
-import { motion, useReducedMotion } from 'motion/react'
+import { m, useReducedMotion } from 'motion/react'
 import { PatchBay } from './PatchBay'
 
 export function Hero() {
@@ -15,17 +15,17 @@ export function Hero() {
   return (
     <section id="top" className="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-10 px-4 pb-16 pt-10 sm:px-6 lg:grid-cols-12 lg:gap-8 xl:gap-10 lg:px-10 lg:pb-24 lg:pt-14 xl:pt-10">
       <div className="lg:col-span-5">
-        <motion.h1
+        <m.h1
           {...rise(0.05)}
           className="display text-[3.4rem] text-cream sm:text-[4.6rem] lg:text-[3.8rem] xl:text-[5rem] 2xl:text-[6rem]"
         >
           Your company, patched through to the right tools and&nbsp;people.
-        </motion.h1>
-        <motion.p {...rise(0.2)} className="mt-6 max-w-[34rem] text-[1.1rem] leading-relaxed text-cream-dim sm:text-[1.2rem]">
+        </m.h1>
+        <m.p {...rise(0.2)} className="mt-6 max-w-[34rem] text-[1.1rem] leading-relaxed text-cream-dim sm:text-[1.2rem]">
           urelimitless is the operator. We pick the AI tools that fit the way your team already works, wire them in,
           and send the engineers, designers and analysts who deliver the job. One call, both halves.
-        </motion.p>
-        <motion.div {...rise(0.32)} className="mt-8 flex flex-wrap items-center gap-3">
+        </m.p>
+        <m.div {...rise(0.32)} className="mt-8 flex flex-wrap items-center gap-3">
           <a href="#ring" className="btn btn-primary">
             <span className="lamp is-lit" aria-hidden />
             Patch us in
@@ -33,8 +33,8 @@ export function Hero() {
           <a href="#calls" className="btn btn-secondary">
             See completed calls
           </a>
-        </motion.div>
-        <motion.dl {...rise(0.42)} className="mt-10 hidden max-w-[34rem] grid-cols-2 sm:grid gap-x-6 gap-y-4 border-t border-brass/40 pt-6 text-[0.95rem] sm:grid-cols-3">
+        </m.div>
+        <m.dl {...rise(0.42)} className="mt-10 hidden max-w-[34rem] grid-cols-2 sm:grid gap-x-6 gap-y-4 border-t border-brass/40 pt-6 text-[0.95rem] sm:grid-cols-3">
           <div>
             <dt className="label text-[0.68rem] text-brass-hi">Left of the board</dt>
             <dd className="mt-1.5 text-cream-dim">Companies with a job to do</dd>
@@ -47,10 +47,10 @@ export function Hero() {
             <dt className="label text-[0.68rem] text-brass-hi">The operator</dt>
             <dd className="mt-1.5 text-cream-dim">Us, patching the cord through</dd>
           </div>
-        </motion.dl>
+        </m.dl>
       </div>
 
-      <motion.div
+      <m.div
         {...(reduced
           ? {}
           : {
@@ -62,10 +62,10 @@ export function Hero() {
       >
         <PatchBay />
         <p className="mt-3 text-center text-[0.85rem] text-cream-mute">
-          <span className="sm:hidden">Scroll the board sideways. </span>
-          Hover or tab to a company jack to patch it through by hand.
+          <span className="sm:hidden">Tap a company jack to patch it through by hand.</span>
+          <span className="hidden sm:inline">Hover or tab to a company jack to patch it through by hand.</span>
         </p>
-      </motion.div>
+      </m.div>
     </section>
   )
 }

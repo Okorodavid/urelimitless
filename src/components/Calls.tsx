@@ -1,4 +1,4 @@
-import { motion, useReducedMotion } from 'motion/react'
+import { m, useReducedMotion } from 'motion/react'
 import { ArrowUpRight, Code2 } from 'lucide-react'
 import { projects } from '../data/projects'
 
@@ -18,12 +18,12 @@ export function Calls() {
 
       <ol className="mt-12 border-t border-brass/40">
         {projects.map((p, i) => (
-          <motion.li
+          <m.li
             key={p.id}
             className="grid grid-cols-1 gap-6 border-b border-brass/30 py-10 md:grid-cols-12 md:gap-8 lg:py-12"
             initial={reduced ? false : { opacity: 0, x: -24 }}
             whileInView={reduced ? undefined : { opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.25 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.8, delay: 0.05 + (i % 2) * 0.05, ease: [0.16, 1, 0.3, 1] }}
           >
             <div className="md:col-span-4">
@@ -73,7 +73,7 @@ export function Calls() {
               <p className="label mt-6 text-[0.66rem] text-cream-mute">On the line</p>
               <p className="mt-2 text-cream-dim">{p.people}</p>
             </div>
-          </motion.li>
+          </m.li>
         ))}
       </ol>
     </section>

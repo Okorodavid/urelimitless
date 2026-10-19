@@ -1,3 +1,4 @@
+import { LazyMotion, domAnimation } from 'motion/react'
 import { Calls } from './components/Calls'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
@@ -9,7 +10,7 @@ import { ToolStrip } from './components/ToolStrip'
 
 export default function App() {
   return (
-    <>
+    <LazyMotion features={domAnimation} strict>
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-amber focus:px-4 focus:py-2 focus:text-ink"
@@ -26,6 +27,6 @@ export default function App() {
         <RingUs />
       </main>
       <Footer />
-    </>
+    </LazyMotion>
   )
 }

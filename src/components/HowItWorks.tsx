@@ -1,4 +1,4 @@
-import { motion, useReducedMotion } from 'motion/react'
+import { m, useReducedMotion } from 'motion/react'
 import { useLayoutEffect, useRef, useState } from 'react'
 
 const steps = [
@@ -72,7 +72,7 @@ export function HowItWorks() {
               viewBox={`0 0 ${geom.w} ${geom.h}`}
               aria-hidden
             >
-              <motion.path
+              <m.path
                 d={geom.d}
                 fill="none"
                 stroke="#e8b52f"
@@ -83,7 +83,7 @@ export function HowItWorks() {
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1] }}
               />
-              <motion.path
+              <m.path
                 d={geom.d}
                 fill="none"
                 stroke="#fff"
@@ -101,7 +101,7 @@ export function HowItWorks() {
           )}
 
           {steps.map((s, i) => (
-            <motion.li
+            <m.li
               key={s.title}
               className="relative"
               initial={reduced ? false : { opacity: 0, y: 16 }}
@@ -120,7 +120,7 @@ export function HowItWorks() {
                 <span className="text-cream-mute">Example · </span>
                 {s.ticket}
               </p>
-            </motion.li>
+            </m.li>
           ))}
         </ol>
       </div>

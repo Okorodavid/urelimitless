@@ -1,4 +1,4 @@
-import { motion, useReducedMotion } from 'motion/react'
+import { m, useReducedMotion } from 'motion/react'
 import { useState } from 'react'
 
 const lines = [
@@ -64,10 +64,10 @@ export function Lines() {
 function LineRow({ line, index, reduced }: { line: (typeof lines)[number]; index: number; reduced: boolean }) {
   const [on, setOn] = useState(reduced)
   return (
-    <motion.li
+    <m.li
       className="grid grid-cols-[auto_1fr] gap-x-5 gap-y-3 px-5 py-7 sm:px-8 sm:py-8 md:grid-cols-[auto_1fr_minmax(0,18rem)] md:gap-x-8"
       onViewportEnter={() => setOn(true)}
-      viewport={{ once: true, amount: 0.6 }}
+      viewport={{ once: true, amount: 0.3 }}
       initial={reduced ? false : { opacity: 0, x: -12 }}
       whileInView={reduced ? undefined : { opacity: 1, x: 0 }}
       transition={{ duration: 0.7, delay: index * 0.06, ease: [0.16, 1, 0.3, 1] }}
@@ -89,6 +89,6 @@ function LineRow({ line, index, reduced }: { line: (typeof lines)[number]; index
         <p className="label text-[0.66rem] text-cream-mute">A ticket might read</p>
         <p className="ticket mt-2 text-[0.95rem] leading-snug text-cream">{line.example}</p>
       </div>
-    </motion.li>
+    </m.li>
   )
 }
