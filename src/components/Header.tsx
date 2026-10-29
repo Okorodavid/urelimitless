@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { LogoLockup } from './Logo'
 
 const links = [
   { href: '#lines', label: 'Lines' },
@@ -11,11 +12,9 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-brass/40 bg-bakelite/85 backdrop-blur-sm">
       <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-3 px-3 py-3 sm:gap-4 sm:px-6 lg:px-10">
-        <a href="#top" className="flex items-center gap-2 sm:gap-3" aria-label="urelimitless, home">
-          <JackMark />
-          <span className="display text-[1.4rem] normal-case tracking-normal text-cream sm:text-[1.9rem]">
-            urelimitless
-          </span>
+        <a href="#top" className="flex items-center text-cream" aria-label="urelimitless, home">
+          <LogoLockup height={36} className="sm:hidden" />
+          <LogoLockup height={44} className="hidden sm:block" />
         </a>
 
         <nav aria-label="Primary" className="hidden items-center gap-2 md:flex">
@@ -59,23 +58,5 @@ export function Header() {
         </nav>
       )}
     </header>
-  )
-}
-
-export function JackMark({ size = 30 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 64 64" aria-hidden className="shrink-0">
-      <defs>
-        <radialGradient id="markBrass" cx="35%" cy="30%" r="75%">
-          <stop offset="0" stopColor="#e2c26f" />
-          <stop offset="0.45" stopColor="#b08d3f" />
-          <stop offset="1" stopColor="#6d5424" />
-        </radialGradient>
-      </defs>
-      <circle cx="32" cy="34" r="21" fill="url(#markBrass)" />
-      <circle cx="32" cy="34" r="14" fill="#2a2522" />
-      <circle cx="32" cy="34" r="6" fill="#0d0c0b" />
-      <circle cx="50" cy="12" r="6" fill="#e8b52f" />
-    </svg>
   )
 }

@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#1d1b19"/>
-  <circle cx="32" cy="32" r="19" fill="#b08d3f"/>
-  <circle cx="32" cy="32" r="13" fill="#2a2522"/>
-  <circle cx="32" cy="32" r="6" fill="#0d0c0b"/>
-  <circle cx="48" cy="14" r="5" fill="#e8b52f"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="urelimitless app icon"><title>urelimitless app icon</title><rect width="64" height="64" rx="14" fill="#1D1B19"/><g transform="translate(4.5,4.5) scale(0.2150)"><g transform="translate(26.95,16.74) scale(0.9717)"><path fill="#EFE6D6" d="M40,112 L76,76 L76,150 A52,52 0 0 0 180,150 L180,58 L216,22 L216,150 A88,88 0 0 1 40,150 Z"/><path fill-rule="evenodd" fill="#E8B52F" d="M-8,33 A42,42 0 1 0 76,33 A42,42 0 1 0 -8,33 Z M9,35 A10,10 0 1 0 29,35 A10,10 0 1 0 9,35 Z M39,35 A10,10 0 1 0 59,35 A10,10 0 1 0 39,35 Z"/></g></g></svg>

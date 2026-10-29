@@ -200,7 +200,7 @@ A bakelite-and-brass palette: four warm near-blacks, three creams, three brasses
 - **Headline** (900, 2.8rem rising to 3.6rem at sm, with 4.2 to 4.4rem at lg for Completed calls and Ring the operator; same leading and tracking; uppercase): section titles, ending in a full stop.
 - **Project title** (900, 3rem rising to 3.8rem and 4.4rem; line-height 0.9; uppercase): each completed-call name, set at headline scale so the proof reads as the loudest thing in its row.
 - **Title** (900, 1.9 to 2.4rem; uppercase): line titles and step titles inside panels and lists.
-- **Wordmark** (900, 1.6rem rising to 1.9rem in the header, 1.4rem in the footer; normal case; tracking normal): the only display setting that is not uppercase. "urelimitless" is always one lowercase word.
+- **Logo** (since 2026-10-29): the U-bot lockup from `brand/logo/u-bot`, drawn by `src/components/Logo.tsx` (`LogoLockup`): its own hand-built lettering ("ure" heavy, "limitless" light), not set in a font. On this site it uses the kit's "switchboard" colourway: the U and name in `cream` (currentColor via `text-cream`) and the bot in `amber`, so the bot reads as one more lit lamp (the Cord Rule allows amber on lamps). The favicon, app icons and link-preview image use the same colours on bakelite. Header height 36px on phones and 44px from sm; footer 36px; never under 140px wide. "urelimitless" is always one lowercase word. Usage rules: `brand/logo/u-bot/README.md`.
 - **Body** (400, 1.0625rem base; hero lede 1.1 to 1.2rem with relaxed leading; line-height 1.55; `cream-dim`): paragraphs capped between 30rem and 42rem measure.
 - **Small body** (0.95rem and 0.85rem): hero dl values, footer links, the board caption, status copy.
 - **Label** (600, 0.6 to 0.72rem; tracking 0.16em; uppercase; line-height 1): engraved plate text, field names, navigation. Plates themselves track at 0.14em; the SVG plates on the board at 0.12em (jack labels) and 0.16em (column headers).
@@ -246,7 +246,7 @@ Depth is material, not atmospheric. Every surface describes its own edge with a 
 
 ## Shapes
 
-Small radii on fabricated parts, round on turned parts. Plates are near-square (3px; 2px when drawn in SVG on the board); ticket readouts and inline ticket chips 4px; pushbuttons and the bat handle 6px; panels and the toggle capsule 14px. Jacks, lamps, screws, plugs and the brand mark are circles. The brand mark is a jack seen face-on: brass bevel ring, dark socket, black contact, with a single amber lamp at the upper right; the same silhouette, with a 5px-radius lamp at the jack's upper right, is every jack on the board.
+Small radii on fabricated parts, round on turned parts. Plates are near-square (3px; 2px when drawn in SVG on the board); ticket readouts and inline ticket chips 4px; pushbuttons and the bat handle 6px; panels and the toggle capsule 14px. Jacks, lamps, screws and plugs are circles. Every jack on the board is a jack seen face-on: brass bevel ring, dark socket, black contact, with a 5px-radius lamp at the upper right. (This was also the brand mark until 2026-10-29; the brand mark is now the U-bot logo, see Typography › Logo.)
 
 Borders are brass hairlines at reduced alpha (1px, 30 to 55%), never solid cream or white. Form fields on paper are a single ink underline at 40% alpha, no box. The paper form has a 2px ink rule at 80% under its ticket heading. The tool strip fades its ends with a horizontal mask (transparent to 6%, 94% to transparent). The body sheen is a fixed `radial-gradient(120% 70% at 30% -10%)`.
 
@@ -277,9 +277,9 @@ Borders are brass hairlines at reduced alpha (1px, 30 to 55%), never solid cream
 - **Submit:** primary pushbutton with its lamp; adjacent status copy in Special Elite at ink 70%, `aria-live="polite"`.
 
 ### Navigation
-- **Header:** sticky, bakelite at 85% with a 4px backdrop blur, brass hairline below at 40%, 12px vertical padding. Wordmark with the jack mark (30px) at left; three cream plates with dark lamps as links (0.72rem, lamp lights on hover or focus); primary pushbutton "Patch us in" ("Patch in" under sm) with a lit lamp at right.
+- **Header:** sticky, bakelite at 85% with a 4px backdrop blur, brass hairline below at 40%, 12px vertical padding. The U-bot logo at left; three cream plates with dark lamps as links (0.72rem, lamp lights on hover or focus); primary pushbutton "Patch us in" ("Patch in" under sm) with a lit lamp at right.
 - **Mobile:** below md the plates collapse behind a secondary pushbutton labelled "Board" / "Close" that opens a stacked list of full-width plates under a brass hairline.
-- **Footer:** jack mark at 26px, wordmark at 1.4rem, dark plate "Exchange open" with a lit lamp; links in `cream-dim` that go `cream` on hover; copyright in `cream-mute`.
+- **Footer:** the U-bot logo at 36px high, dark plate "Exchange open" with a lit lamp; links in `cream-dim` that go `cream` on hover; copyright in `cream-mute`.
 
 ### Toggle
 - **Shape:** 28 x 46px brass capsule (14px radius) with an inset well and a 10px near-black pivot; a 12 x 30px bat handle (6px radius, dark gradient) hinged at the top.

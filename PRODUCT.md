@@ -44,7 +44,7 @@ Engagement starts with a conversation; there is no self-serve checkout or pricin
 
 ## Brand Commitments
 
-- Name: **urelimitless**, written as one word, lowercase, no "you are" pun, no split into "U Re Limitless".
+- Name: **urelimitless**, written as one word, lowercase, never split into "U Re Limitless". It means "you're limitless": the owner's message to clients that they can achieve anything they set their minds to, and beyond (owner, 2026-10-29). The logo carries it: a rising U ("you") with an AI bot at its shoulder (`brand/logo/u-bot`).
 - Domain: urelimitless.com (currently a parked Hostinger page). A live product already sits at ringleader.urelimitless.com, so subdomains are in use.
 - Founder's GitHub: Okorodavid.
 - Design references the user pointed to: 21st.dev (animated heroes, shaders, marquees, bento grids, number tickers, text reveals) for motion ideas. changefest.dev did not resolve on 2026-10-18.
