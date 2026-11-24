@@ -71,4 +71,4 @@ Absent, must not be fabricated: client names, testimonials, revenue or headcount
 
 ## Accessibility & Inclusion
 
-Standard WCAG AA for a public marketing site: keyboard-reachable navigation and contact path, reduced-motion respected for every animation, contrast at AA on all surfaces.
+Standard WCAG AA for a public marketing site: keyboard-reachable navigation and contact path, reduced-motion respected for every animation except the header logo loop and the board cords, which the owner chose to always play (2026-11-24), contrast at AA on all surfaces.

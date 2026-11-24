@@ -13,7 +13,7 @@ export function LogoPlay({ className = '' }: { className?: string }) {
     const frame = mountLogoMotion(root, { u: 'currentColor', bot: '#E8B52F', bg: '#1D1B19' }, 'ubot')
     const frozen = new URLSearchParams(location.search).get('logo')
     if (frozen !== null) return frame(parseFloat(frozen) || 0)
-    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return frame(0)
+    // Owner's call (2026-11-24): the logo always plays, even when the device asks for reduced motion.
 
     let raf = 0
     let t0 = performance.now()

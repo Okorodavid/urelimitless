@@ -1,4 +1,4 @@
-import { AnimatePresence, m, useReducedMotion } from 'motion/react'
+import { AnimatePresence, m } from 'motion/react'
 import { useEffect, useState } from 'react'
 import { calls, companies, people, tools } from '../data/board'
 
@@ -87,7 +87,8 @@ const LABEL_FONT = 'Barlow Condensed, Arial Narrow, sans-serif'
 const TICKET_FONT = 'Special Elite, Courier New, monospace'
 
 export function PatchBay() {
-  const reduced = useReducedMotion()
+  // Owner's call (2026-11-24): the cords always animate, even when the device asks for reduced motion.
+  const reduced = false
   const narrow = useNarrow()
   const g = narrow ? NARROW : WIDE
   const [callIdx, setCallIdx] = useState(0)
