@@ -21,6 +21,7 @@
   .home { display: inline-block; margin-bottom: 32px; color: var(--amber); text-decoration: none; font-weight: 600; }
   h1 { font: 900 clamp(2.6rem, 9vw, 3.6rem)/.92 'Big Shoulders Display', 'Arial Narrow', sans-serif; text-transform: uppercase; margin: 6px 0 24px; }
   .label { font: 600 .7rem/1 'Barlow Condensed', 'Arial Narrow', sans-serif; letter-spacing: .16em; text-transform: uppercase; color: var(--cmute); }
+  h1 .time { font: 600 .78rem/1 'Barlow Condensed', 'Arial Narrow', sans-serif; letter-spacing: .16em; color: var(--ink); background: var(--amber); border-radius: 3px; padding: .45em .6em .4em; vertical-align: middle; white-space: nowrap; }
   .bar { display: flex; gap: 6px; margin-bottom: 28px; }
   .bar i { flex: 1; height: 4px; background: var(--off); border-radius: 2px; transition: background .2s; }
   .bar i.on { background: var(--amber); }
@@ -50,7 +51,7 @@
 
   <section class="step on" aria-labelledby="h1">
     <p class="label">Step 1 of 3</p>
-    <h1 id="h1">Make a Bybit key</h1>
+    <h1 id="h1">Make a Bybit key <span class="time">3 mins</span></h1>
     <ol>
       <li>Open <b>bybit.com</b> in a browser on a computer. Click your profile icon, then <b>API</b>.</li>
       <li>Click <b>Create New Key</b>, then <b>System-generated API Keys</b>.</li>
