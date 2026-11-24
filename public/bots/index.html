@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1d1b19" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="referrer" content="no-referrer" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<title>Connect to the bots · urelimitless</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Barlow+Condensed:wght@600&family=Big+Shoulders+Display:wght@900&family=Special+Elite&display=swap" rel="stylesheet" />
+<style>
+  :root { --bk:#1d1b19; --bkd:#141210; --panel:#262321; --phi:#312c28; --cream:#efe6d6; --cdim:#cfc3ad; --cmute:#a89c86;
+          --ink:#16130f; --brass:#b08d3f; --bhi:#e2c26f; --blo:#6d5424; --amber:#e8b52f; --red:#d9452f; --off:#4a3b1f; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bk); color: var(--cream); font: 400 1.0625rem/1.55 Barlow, system-ui, sans-serif; }
+  main { max-width: 560px; margin: 0 auto; padding: 40px 16px 80px; }
+  .home { display: inline-block; margin-bottom: 32px; color: var(--amber); text-decoration: none; font-weight: 600; }
+  h1 { font: 900 clamp(2.6rem, 9vw, 3.6rem)/.92 'Big Shoulders Display', 'Arial Narrow', sans-serif; text-transform: uppercase; margin: 6px 0 24px; }
+  .label { font: 600 .7rem/1 'Barlow Condensed', 'Arial Narrow', sans-serif; letter-spacing: .16em; text-transform: uppercase; color: var(--cmute); }
+  .bar { display: flex; gap: 6px; margin-bottom: 28px; }
+  .bar i { flex: 1; height: 4px; background: var(--off); border-radius: 2px; transition: background .2s; }
+  .bar i.on { background: var(--amber); }
+  .step { display: none; } .step.on { display: block; }
+  ol { margin: 0; padding-left: 1.3em; color: var(--cdim); } li { margin: 8px 0; } li b { color: var(--cream); font-weight: 600; }
+  code { font-family: 'Special Elite', 'Courier New', monospace; background: var(--phi); color: var(--bhi); padding: 1px 6px; border-radius: 2px; }
+  .cando { margin-top: 28px; border-left: 3px solid var(--brass); padding-left: 16px; }
+  .cando p { margin: 12px 0; color: var(--cdim); } .cando .label { display: block; margin-bottom: 4px; color: var(--bhi); }
+  .paper { background: var(--cream); color: var(--ink); border-radius: 4px; padding: 8px 24px 28px; }
+  .paper label { display: block; margin-top: 20px; } .paper .label { color: var(--blo); }
+  .paper input { width: 100%; background: transparent; border: 0; border-bottom: 1px dashed #8a7b62; border-radius: 0;
+                 font: 400 1rem/1.4 'Special Elite', 'Courier New', monospace; color: var(--ink); padding: 8px 0; outline: none; }
+  .paper input:focus { border-bottom: 1px solid var(--ink); }
+  .err { min-height: 1.5em; margin: 16px 0 0; color: var(--red); font-weight: 600; }
+  .nav { display: flex; gap: 10px; margin-top: 28px; flex-wrap: wrap; }
+  .btn { display: inline-block; font: 600 .78rem/1 'Barlow Condensed', 'Arial Narrow', sans-serif; letter-spacing: .16em; text-transform: uppercase;
+         background: var(--amber); color: var(--ink); border: 0; border-radius: 6px; padding: 1.15em 1.6em 1.1em; cursor: pointer; text-decoration: none; }
+  .btn:hover { background: #efbe3a; } .btn.sec { background: var(--panel); color: var(--cream); }
+  .btn:disabled { opacity: .5; cursor: default; }
+  .btn:focus-visible, input:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+</style>
+</head>
+<body>
+<main>
+  <a class="home" href="/">urelimitless</a>
+  <div class="bar" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+
+  <section class="step on" aria-labelledby="h1">
+    <p class="label">Step 1 of 3</p>
+    <h1 id="h1">Make a Bybit key</h1>
+    <ol>
+      <li>On Bybit, tap your profile icon, then <b>API</b>.</li>
+      <li>Tap <b>Create New Key</b>, then <b>System-generated API Keys</b>.</li>
+      <li>Choose <b>API Transaction</b> and name it <code>Bots</code>.</li>
+      <li>Pick <b>Read-Write</b>.</li>
+      <li>In the IP box, paste <code>130.210.43.225</code>. That's the bot server, so the key won't work anywhere else, even if someone copies it.</li>
+      <li>Under <b>Unified Trading</b>, tick <b>Contract: Orders</b> and <b>Positions</b>. Leave every other box empty.</li>
+      <li>Confirm with your 2FA code. Copy the key and the secret now: Bybit shows the secret only once.</li>
+    </ol>
+    <div class="cando">
+      <p><span class="label">The key can</span>open and close futures trades and set their stop-losses.</p>
+      <p><span class="label">The key can't</span>withdraw or transfer anything. You left those boxes empty, so it has no power to move money.</p>
+      <p><span class="label">You can</span>withdraw, close a trade or delete the key whenever you like. Delete it and the bots stop.</p>
+    </div>
+    <div class="nav"><button class="btn" type="button" data-go="1">I have my key</button></div>
+  </section>
+
+  <section class="step" aria-labelledby="h2">
+    <p class="label">Step 2 of 3</p>
+    <h1 id="h2" tabindex="-1">Paste it</h1>
+    <form class="paper" id="form" novalidate>
+      <label><span class="label">Your name</span><input name="name" autocomplete="name" maxlength="40" required /></label>
+      <label><span class="label">API key</span><input name="key" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="40" required /></label>
+      <label><span class="label">API secret</span><input name="secret" type="password" autocomplete="off" maxlength="64" required /></label>
+      <p class="err" id="err" role="alert"></p>
+      <div class="nav"><button class="btn sec" type="button" data-go="0">Back</button><button class="btn" id="send" type="submit">Connect</button></div>
+    </form>
+  </section>
+
+  <section class="step" aria-labelledby="h3">
+    <p class="label">Step 3 of 3</p>
+    <h1 id="h3" tabindex="-1">Turn on alerts</h1>
+    <div class="nav"><a class="btn" id="tg" href="#" target="_blank" rel="noopener">Open Telegram</a></div>
+  </section>
+</main>
+<script>
+  const API = 'https://bots.urelimitless.com/join';
+  const steps = [...document.querySelectorAll('.step')], bars = [...document.querySelectorAll('.bar i')];
+  function go(n) {
+    steps.forEach((s, i) => s.classList.toggle('on', i === n));
+    bars.forEach((b, i) => b.classList.toggle('on', i <= n));
+    const h = steps[n].querySelector('h1'); h.focus({ preventScroll: true }); window.scrollTo(0, 0);
+  }
+  document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => go(+b.dataset.go)));
+  const form = document.getElementById('form'), err = document.getElementById('err'), send = document.getElementById('send');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault(); err.textContent = '';
+    const d = Object.fromEntries(new FormData(form)); for (const k in d) d[k] = d[k].trim();
+    if (!d.name || !d.key || !d.secret) { err.textContent = 'Fill in all three.'; return; }
+    send.disabled = true; send.textContent = 'Checking…';
+    try {
+      const r = await fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(d) });
+      const j = await r.json().catch(() => ({}));
+      if (r.ok && j.ok && /^https:\/\/t\.me\//.test(j.telegram || '')) {
+        form.reset(); document.getElementById('tg').href = j.telegram; go(2);
+      } else err.textContent = j.error || 'Something went wrong. Try again in a minute.';
+    } catch { err.textContent = "Couldn't reach the bot server. Try again in a minute."; }
+    send.disabled = false; send.textContent = 'Connect';
+  });
+</script>
+</body>
+</html>
