@@ -20,11 +20,13 @@ export default function App() {
       <Header />
       <main id="main">
         <Hero />
-        <ToolStrip />
+        <ToolStrip className="hidden md:block" />
         <Lines />
         <HowItWorks />
         <Calls />
         <RingUs />
+        {/* On phones the tool names sit at the bottom, after what we do. */}
+        <ToolStrip className="md:hidden" />
       </main>
       <Footer />
     </LazyMotion>

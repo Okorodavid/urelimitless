@@ -1,9 +1,9 @@
 import { toolStrip } from '../data/board'
 
-export function ToolStrip() {
+export function ToolStrip({ className = '' }: { className?: string }) {
   const items = [...toolStrip, ...toolStrip]
   return (
-    <section aria-label="Tools on the board" className="border-y border-brass/40 bg-bakelite-deep/70 py-4">
+    <section aria-label="Tools on the board" className={`border-y border-brass/40 bg-bakelite-deep/70 py-4 ${className}`}>
       <div className="mx-auto flex max-w-[1400px] items-center gap-4 overflow-hidden px-4 sm:px-6 lg:px-10">
         <span className="plate plate-dark shrink-0 text-[0.68rem]">On the board</span>
         <div className="relative flex-1 overflow-hidden [mask-image:linear-gradient(90deg,transparent,#000_6%,#000_94%,transparent)]">
