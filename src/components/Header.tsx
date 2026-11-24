@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { LogoLockup } from './Logo'
+import { LogoPlay } from './LogoPlay'
 
 const links = [
   { href: '#lines', label: 'Lines' },
@@ -13,8 +13,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-brass/40 bg-bakelite/85 backdrop-blur-sm">
       <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-3 px-3 py-3 sm:gap-4 sm:px-6 lg:px-10">
         <a href="#top" className="flex items-center text-cream" aria-label="urelimitless, home">
-          <LogoLockup height={36} className="sm:hidden" />
-          <LogoLockup height={44} className="hidden sm:block" />
+          <LogoPlay className="h-9 sm:h-11" />
         </a>
 
         <nav aria-label="Primary" className="hidden items-center gap-2 md:flex">

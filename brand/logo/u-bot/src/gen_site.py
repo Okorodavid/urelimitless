@@ -13,7 +13,7 @@ tsx = f"""// The urelimitless logo (U-bot). Generated from brand/logo/u-bot/src 
 
 const U = '{U}'
 
-const WORDMARK =
+export const WORDMARK =
   '{WORDMARK_D}'
 
 function Bot({{ fill }}: {{ fill: string }}) {{

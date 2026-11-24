@@ -80,7 +80,9 @@ function cordPath(g: Geom, x1: number, y1: number, x2: number, y2: number) {
 
 type Phase = 0 | 1 | 2 | 3
 
-const draw = { duration: 0.95, ease: [0.16, 1, 0.3, 1] as const }
+// Slow enough to read as a cord being pulled across, with a soft landing.
+const DRAW_MS = 1300
+const draw = { duration: DRAW_MS / 1000, ease: [0.45, 0, 0.25, 1] as const }
 const LABEL_FONT = 'Barlow Condensed, Arial Narrow, sans-serif'
 const TICKET_FONT = 'Special Elite, Courier New, monospace'
 
@@ -98,8 +100,8 @@ export function PatchBay() {
   useEffect(() => {
     if (reduced) return
     let t: number | undefined
-    if (phase === 0) t = window.setTimeout(() => setPhase(1), 950)
-    else if (phase === 1) t = window.setTimeout(() => setPhase(2), 950)
+    if (phase === 0) t = window.setTimeout(() => setPhase(1), DRAW_MS)
+    else if (phase === 1) t = window.setTimeout(() => setPhase(2), DRAW_MS)
     else if (phase === 2 && hover === null) t = window.setTimeout(() => setPhase(3), 2800)
     else if (phase === 3)
       t = window.setTimeout(() => {
